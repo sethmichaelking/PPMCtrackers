@@ -17,7 +17,7 @@ class Routes extends Component {
     const {isLoggedIn} = this.props
 
     return (
-      <div>
+      <div style={{overflow: 'auto'}}>
         {isLoggedIn ? (
           <Switch>
             <Route path="/home" component={Home} />
